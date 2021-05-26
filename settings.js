@@ -1,9 +1,10 @@
+require('dotenv').config()
 module.exports = {
     // Enter your Hoichoi Credentials
 
-    email: "you@email.com",
-    password: "nubpassword",
+    email: process.env.MAIL,
+    password: process.env.PASS,
 
     // Enter here any random alphabet string
-    randomString: "abcDgfHoicjsoeij"
+    randomString: process.env.STRING
 }
